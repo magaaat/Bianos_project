@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "419611941342",
+    "project_id": "bianospizza-65d0f",
+    "storage_bucket": "bianospizza-65d0f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419611941342:android:1838df343e6a3cb3f3e54f",
+        "android_client_info": {
+          "package_name": "com.bianos_pizza_application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU-e30GeP2XtrZUFxefd_ZnPAyaHp1dGo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419611941342:android:48ff4d540a7e3728f3e54f",
+        "android_client_info": {
+          "package_name": "com.example.inventory_salesanalytics_pointofsale_system"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU-e30GeP2XtrZUFxefd_ZnPAyaHp1dGo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

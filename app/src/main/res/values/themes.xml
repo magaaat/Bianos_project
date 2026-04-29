@@ -1,0 +1,94 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Inventory_SalesAnalytics_PointOfSale_System" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="alertDialogTheme">@style/CustomAlertDialogTheme</item>
+    </style>
+
+    <style name="Theme.Inventory_SalesAnalytics_PointOfSale_System" parent="Base.Theme.Inventory_SalesAnalytics_PointOfSale_System" />
+
+    <!-- Navigation Text Style -->
+    <style name="BottomNavTextSmall" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!-- Style for Circular Images in POS -->
+    <style name="CircleImageAppearance">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="CircleImage">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- Splash Screen Theme to remove the gray background/icon "preview" screen -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/gradient_bg</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <!-- Dark theme for Inventory/Stock dialogs -->
+    <style name="CustomAlertDialogTheme" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/dialog_background_rounded</item>
+        <item name="colorAccent">@color/accent_orange</item>
+        <item name="android:textColorPrimary">@color/text_white</item>
+        <item name="android:textColorSecondary">@color/text_grey</item>
+        <item name="buttonBarPositiveButtonStyle">@style/AlertButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/AlertButtonStyle</item>
+    </style>
+
+    <style name="AlertButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/accent_orange</item>
+    </style>
+
+    <!-- Light theme for Confirmation dialogs matching the requested image -->
+    <style name="ConfirmDialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/dialog_background_white</item>
+        <item name="colorAccent">@color/confirm_purple</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:textColorSecondary">#444444</item>
+        <item name="buttonBarPositiveButtonStyle">@style/ConfirmButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/ConfirmButtonStyle</item>
+    </style>
+
+    <style name="ConfirmButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/confirm_purple</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="Theme.MaterialComponents.DayNight.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- Custom Toasts Styles -->
+    <style name="SuccessToast">
+        <item name="stTextSize">14sp</item>
+        <item name="stTextColor">@color/white</item>
+        <item name="stColorBackground">#8E2400</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stRadius">24dp</item>
+        <item name="stLength">0</item> <!-- LENGTH_SHORT -->
+    </style>
+
+    <style name="ErrorToast">
+        <item name="stTextSize">14sp</item>
+        <item name="stTextColor">@color/white</item>
+        <item name="stColorBackground">#B00020</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stRadius">24dp</item>
+        <item name="stLength">0</item>
+    </style>
+
+    <style name="InfoToast">
+        <item name="stTextSize">14sp</item>
+        <item name="stTextColor">@color/text_white</item>
+        <item name="stColorBackground">@color/surface_dark</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">1dp</item>
+        <item name="stStrokeColor">@color/accent_orange</item>
+        <item name="stRadius">24dp</item>
+        <item name="stLength">0</item>
+    </style>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="12dp"
+    android:gravity="center_vertical">
+
+    <!-- ITEM NAME & REASON -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvLogItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Name"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A1A"/>
+        <TextView
+            android:id="@+id/tvLogReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reason"
+            android:textSize="10sp"
+            android:textColor="#95A5A6"/>
+    </LinearLayout>
+
+    <!-- TYPE BADGE -->
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tvLogType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="IN"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="2dp"
+            android:textColor="#FFFFFF"
+            android:background="#2E7D32"/>
+    </FrameLayout>
+
+    <!-- QUANTITY -->
+    <TextView
+        android:id="@+id/tvLogQty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="+2.00"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#2E7D32"/>
+
+    <!-- DATE -->
+    <TextView
+        android:id="@+id/tvLogDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:text="2024-04-25"
+        android:textSize="10sp"
+        android:gravity="end"
+        android:textColor="#95A5A6"/>
+
+</LinearLayout>

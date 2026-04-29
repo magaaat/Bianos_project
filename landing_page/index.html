@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biano's POS | Premium Food Business Solution</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Biano's<span>POS</span></div>
+            <div class="nav-links">
+                <a href="#picks-section">Popular</a>
+                <a href="#inventory-section">Inventory</a>
+                <a href="#analytics-section">Analytics</a>
+                <a href="app-debug.apk" class="btn-download" style="padding: 10px 24px; font-size: 0.85rem;" download>Download APK</a>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>The Ultimate Pizza <br>Management System</h1>
+            <p class="tagline">From the kitchen to the counter—manage your orders, ingredients, and profits in one dark-themed, ultra-fast interface.</p>
+            <a href="app-debug.apk" class="btn-download" download>
+                <i class="fas fa-rocket"></i> Get Started for Free
+            </a>
+        </div>
+    </header>
+
+    <!-- POPULAR PICKS SECTION - MATCHING YOUR IMAGE -->
+    <section id="picks-section" class="popular-section">
+        <div class="container">
+            <div class="popular-header">
+                <h2>Our Popular Picks</h2>
+                <a href="#" class="view-menu">View Full Menu</a>
+            </div>
+
+            <div class="picks-grid">
+                <!-- Hawaiian -->
+                <div class="pick-card">
+                    <div class="img-container">
+                        <i class="fas fa-pizza-slice"></i>
+                    </div>
+                    <h3>Hawaiian</h3>
+                    <p>Sweet pineapple, savory ham, and mozzarella cheese</p>
+                </div>
+
+                <!-- Full House -->
+                <div class="pick-card">
+                    <div class="img-container">
+                        <i class="fas fa-pizza-slice" style="transform: rotate(45deg);"></i>
+                    </div>
+                    <h3>Full House</h3>
+                    <p>Loaded with premium meats and fresh vegetables</p>
+                </div>
+
+                <!-- Meatlovers -->
+                <div class="pick-card">
+                    <div class="img-container">
+                        <i class="fas fa-pizza-slice" style="transform: rotate(90deg);"></i>
+                    </div>
+                    <h3>Meatlovers</h3>
+                    <p>Stacked with beef, ham, and meaty flavor in every bite</p>
+                </div>
+
+                <!-- Pepperoni -->
+                <div class="pick-card">
+                    <div class="img-container">
+                        <i class="fas fa-pizza-slice" style="transform: rotate(135deg);"></i>
+                    </div>
+                    <h3>Pepperoni</h3>
+                    <p>Classic pepperoni slices with melted mozzarella cheese</p>
+                </div>
+
+                <!-- Tuna Melt -->
+                <div class="pick-card">
+                    <div class="img-container">
+                        <i class="fas fa-pizza-slice" style="transform: rotate(180deg);"></i>
+                    </div>
+                    <h3>Tuna Melt</h3>
+                    <p>Rich tuna topping with creamy melted cheese</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INVENTORY SECTION (DARK THEME) -->
+    <section id="inventory-section">
+        <div class="container">
+            <div class="popular-header">
+                <h2>Real-Time Inventory</h2>
+            </div>
+            <div class="inventory-panel">
+                <div class="inv-top">
+                    <div class="inv-search-bar">
+                        <i class="fas fa-search"></i> Search inventory...
+                    </div>
+                    <button class="btn-download" style="padding: 10px 20px; font-size: 0.9rem;">+ Add Stock</button>
+                </div>
+                <div class="inv-list">
+                    <div class="inv-item">
+                        <span class="inv-name">Dough Ball (9 inch)</span>
+                        <span class="inv-stock">42 Units</span>
+                        <span class="pill pill-success">Optimal</span>
+                    </div>
+                    <div class="inv-item">
+                        <span class="inv-name">Mozzarella Cheese</span>
+                        <span class="inv-stock">1.2 kg</span>
+                        <span class="pill pill-danger">Critical</span>
+                    </div>
+                    <div class="inv-item">
+                        <span class="inv-name">Pepperoni Slices</span>
+                        <span class="inv-stock">0.8 kg</span>
+                        <span class="pill pill-warning">Low Stock</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANALYTICS SECTION (DARK THEME) -->
+    <section id="analytics-section">
+        <div class="container">
+            <div class="popular-header">
+                <h2>Sales Analytics</h2>
+            </div>
+            <div class="analytics-dashboard">
+                <div class="stat-card">
+                    <i class="fas fa-wallet"></i>
+                    <span class="stat-val">₱ 12,450</span>
+                    <span class="stat-label">Daily Revenue</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="stat-val">84</span>
+                    <span class="stat-label">Total Orders</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-star"></i>
+                    <span class="stat-val">Hawaiian</span>
+                    <span class="stat-label">Top Flavor</span>
+                </div>
+
+                <div class="chart-container">
+                    <h3 style="margin-bottom: 24px; font-size: 1.1rem;">Weekly Performance</h3>
+                    <div class="chart-visual">
+                        <div class="chart-bar" data-label="Mon"><div class="chart-fill" style="height: 40%;"></div></div>
+                        <div class="chart-bar" data-label="Tue"><div class="chart-fill" style="height: 65%;"></div></div>
+                        <div class="chart-bar" data-label="Wed"><div class="chart-fill" style="height: 50%;"></div></div>
+                        <div class="chart-bar" data-label="Thu"><div class="chart-fill" style="height: 85%;"></div></div>
+                        <div class="chart-bar" data-label="Fri"><div class="chart-fill" style="height: 95%;"></div></div>
+                        <div class="chart-bar" data-label="Sat"><div class="chart-fill" style="height: 70%;"></div></div>
+                        <div class="chart-bar" data-label="Sun"><div class="chart-fill" style="height: 60%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo">Biano's<span>POS</span></div>
+            <p style="opacity: 0.5; margin-top: 10px;">The Future of Pizza Business Management.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

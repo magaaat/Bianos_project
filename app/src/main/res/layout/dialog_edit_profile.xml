@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/dialog_background_rounded">
+
+    <!-- Header with Cancel Button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Admin Profile"
+            android:textColor="#333333"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"/>
+        <ImageButton
+            android:id="@+id/btnCancelEdit"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_close_thin"
+            app:tint="#888888"/>
+    </RelativeLayout>
+
+    <!-- Profile Image Preview -->
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="28dp">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivProfilePreview"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/ic_person_head"
+            android:background="#F5F5F5"
+            android:padding="2dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/CircleImageAppearance"
+            app:strokeWidth="2dp"
+            app:strokeColor="#2E7D32"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnPickImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            app:fabCustomSize="36dp"
+            app:srcCompat="@drawable/ic_edit_profile"
+            app:tint="@color/white"
+            app:backgroundTint="#2E7D32"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="start">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/dialog_input_bg"
+            android:backgroundTint="#F5F5F5"
+            android:paddingHorizontal="16dp"
+            android:textColor="#212121"
+            android:hint="Enter username"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="18dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/dialog_input_bg"
+            android:backgroundTint="#F5F5F5"
+            android:paddingHorizontal="16dp"
+            android:textColor="#212121"
+            android:hint="Enter email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="28dp"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnUpdateProfile"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/pill_button_orange"
+        android:backgroundTint="#2E7D32"
+        android:text="Save Changes"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Brand Colors -->
+    <color name="brand_green">#4E601A</color>
+    <color name="brand_orange">#E67E22</color>
+    <color name="brand_orange_light">#FFF9E1</color>
+    <color name="brand_blue_light">#E3F2FD</color>
+    <color name="brand_green_light">#E8F5E9</color>
+
+    <!-- Theme Aware Colors -->
+    <color name="main_background">#FDFDFD</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="search_bar_bg">#F5F5F5</color>
+    <color name="text_primary">#333333</color>
+    <color name="text_secondary">#666666</color>
+    <color name="text_hint">#BCBCBC</color>
+
+    <!-- POS Premium Palette -->
+    <color name="pos_bg">#FDFDFD</color>
+    <color name="pos_surface">#FFFFFF</color>
+    <color name="accent_orange_start">#E67E22</color>
+    <color name="accent_orange_end">#D35400</color>
+
+    <color name="always_white">#FFFFFF</color>
+    <color name="bg_dark">#FDFDFD</color>
+    <color name="surface_dark">#FFFFFF</color>
+    <color name="accent_orange">#E67E22</color>
+    <color name="orange_primary">#E67E22</color>
+    <color name="text_grey">#666666</color>
+    <color name="text_white">#333333</color>
+
+    <color name="error_red">#E74C3C</color>
+    <color name="confirm_purple">#6200EE</color>
+
+    <!-- Toggle Button Colors -->
+    <color name="toggle_in_active">#D4A056</color>
+    <color name="toggle_spoilage_active">#E74C3C</color>
+    <color name="toggle_inactive_bg">#1A1A1A</color>
+    <color name="toggle_inactive_text">#666666</color>
+
+    <!-- Feedback Dialog Colors -->
+    <color name="feedback_success_bg">#D1FAE5</color>
+    <color name="feedback_success_text">#065F46</color>
+    <color name="feedback_success_icon">#10B981</color>
+
+    <color name="feedback_error_bg">#FEE2E2</color>
+    <color name="feedback_error_text">#991B1B</color>
+    <color name="feedback_error_icon">#EF4444</color>
+
+    <color name="feedback_warning_bg">#FEF3C7</color>
+    <color name="feedback_warning_text">#92400E</color>
+    <color name="feedback_warning_icon">#F59E0B</color>
+</resources>

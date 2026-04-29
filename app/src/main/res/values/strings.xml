@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BiañosPizza</string>
+    <string name="all_items_in_stock">All items in stock</string>
+    <string name="top_seller_units_sold">%1$d units sold</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/surface_dark"
+    android:padding="24dp">
+
+    <AutoCompleteTextView
+        android:id="@+id/etItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Item"
+        android:textColor="@color/text_white"
+        android:textColorHint="@color/text_grey"
+        android:backgroundTint="@color/accent_orange"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/etQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:textColor="@color/text_white"
+        android:textColorHint="@color/text_grey"
+        android:backgroundTint="@color/accent_orange"
+        android:padding="12dp" />
+
+</LinearLayout>

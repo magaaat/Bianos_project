@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="32dp"
+    app:cardElevation="16dp"
+    app:cardBackgroundColor="#121212"
+    app:strokeWidth="1.5dp"
+    app:strokeColor="#2A2A2A">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header Image Wrapper -->
+        <FrameLayout
+            android:id="@+id/headerWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivEditProductImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="#000000"
+                android:contentDescription="Product Image" />
+
+            <View
+                android:id="@+id/editImageContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/hero_gradient_overlay"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <ImageButton
+                android:id="@+id/btnEditProductCancel"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/glass_circle_bg"
+                android:src="@drawable/ic_close_thin"
+                app:tint="@color/white"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:contentDescription="Close" />
+
+            <!-- TAP TO CHANGE IMAGE overlay -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_add"
+                    app:tint="@color/white"
+                    android:alpha="0.8"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="TAP TO CHANGE IMAGE"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1"
+                    android:background="@drawable/glass_pill_bg"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="6dp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Content Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="28dp"
+            android:paddingBottom="32dp"
+            app:layout_constraintTop_toBottomOf="@id/headerWrapper"
+            android:layout_marginTop="-30dp"
+            android:background="@drawable/dialog_content_top_radius">
+
+            <TextView
+                android:id="@+id/tvEditProductTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Edit Product"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:fontFamily="serif" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEditFlavorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Product Name"
+                android:textColorHint="#888888"
+                app:hintTextColor="#D4A056"
+                app:boxStrokeColor="#D4A056"
+                app:boxBackgroundColor="#1A1A1A"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEditFlavorName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbEditFixedSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Fixed Size (e.g. 11\&quot; only)"
+                android:textColor="#999999"
+                app:buttonTint="#D4A056" />
+
+            <LinearLayout
+                android:id="@+id/llEditMultiSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:hint="9\&quot; Price"
+                    android:textColorHint="#888888"
+                    app:hintTextColor="#D4A056"
+                    app:boxStrokeColor="#D4A056"
+                    app:boxBackgroundColor="#1A1A1A"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etEditPrice9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="11\&quot; Price"
+                    android:textColorHint="#888888"
+                    app:hintTextColor="#D4A056"
+                    app:boxStrokeColor="#D4A056"
+                    app:boxBackgroundColor="#1A1A1A"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etEditPrice11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEditFixedPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Price (Fixed Size)"
+                android:visibility="gone"
+                android:textColorHint="#888888"
+                app:hintTextColor="#D4A056"
+                app:boxStrokeColor="#D4A056"
+                app:boxBackgroundColor="#1A1A1A"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEditPriceFixed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEditToppings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Toppings (e.g. Bacon,Cheese)"
+                android:textColorHint="#888888"
+                app:hintTextColor="#D4A056"
+                app:boxStrokeColor="#D4A056"
+                app:boxBackgroundColor="#1A1A1A"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEditToppings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEditProductSave"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="24dp"
+                android:text="SAVE CHANGES"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:backgroundTint="#D4A056"
+                app:cornerRadius="18dp"
+                app:elevation="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEditProductDelete"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="12dp"
+                android:text="DELETE PRODUCT"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:backgroundTint="#FF4444"
+                app:cornerRadius="15dp"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

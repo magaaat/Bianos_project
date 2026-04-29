@@ -1,0 +1,4 @@
+<!-- Placeholder to fix build error. This file can be deleted. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@android:color/transparent" />
+</shape>
